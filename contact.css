@@ -1,0 +1,367 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #eaeffa;
+    margin: 0;
+    
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-1 {
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu-link:hover {
+    font-weight: bold;
+}
+
+.site-logo-img {
+    margin-top: 20px;
+
+}
+
+.custom-logo {
+    max-width: 100%;
+    /* La imagen no será más ancha que el contenedor */
+    height: auto;
+    /* Ajusta la altura proporcionalmente */
+}
+
+
+.contenido-about-us {
+    font-size: 150px;
+}
+
+.caja1 {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-top: 130px;
+}
+
+.separador {
+    border-bottom: 1px solid #000;
+}
+
+
+
+.contenedor-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 250px;
+    gap: 10px;
+    margin-top: -100px;
+}
+
+.columna-formulario, .columna-informacion {
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nombre {
+    display: flex;
+    gap: 10px;
+}
+
+.nombre input {
+    width: 100%;
+}
+
+.campo label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.boton-enviar {
+    padding: 10px 20px;
+    background-color: #d74a4a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #bf3c3c;
+}
+
+.informacion-contacto {
+    display: flex;
+    justify-content: center; /* Centra los divs horizontalmente */
+    align-items: center; /* Centra los divs verticalmente */
+    gap: 85px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+.item-contacto {
+    text-align: center;
+}
+
+.item-contacto p {
+    color: #000;
+}
+
+.redes .iconos-redes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.iconos-redes a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.iconos-redes img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+.pie-pagina {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-pie {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.logo-texto .logo {
+    max-width: 100%;
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.descripcion {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.contacto .telefono {
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.contacto .email,
+.contacto .direccion {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+
+.redes-sociales svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+
+
+
+
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .menu-1 {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .caja1 {
+        margin-top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .contenedor-formulario {
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+        margin: 20px;
+    }
+
+    .contenido-about-us {
+        font-size: 100px;
+    }
+
+    .informacion-contacto {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pie-pagina {
+        padding: 20px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-logo {
+        max-width: 80%;
+    }
+
+    .menu-1 {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .caja1 {
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 10px;
+    }
+    
+    .contenedor-formulario {
+        margin-top: 20px;
+    }
+
+    .contenido-about-us {
+        font-size: 70px;
+    }
+
+    .informacion-contacto {
+        flex-direction: column;
+        font-size: 8px;
+        gap: 5px;
+    }
+
+    .pie-pagina {
+        padding: 10px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}

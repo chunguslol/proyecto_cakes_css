@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #eaeffa;
+    margin: 0;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-1 {
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu-link:hover {
+    font-weight: bold;
+}
+
+.site-logo-img {
+    margin-top: 20px;
+
+}
+
+.custom-logo {
+    max-width: 100%;
+    /* La imagen no será más ancha que el contenedor */
+    height: auto;
+    /* Ajusta la altura proporcionalmente */
+}
+
+/* ------------------------------------------------------ */
+
+.descripcion-der {
+    line-height: 2;
+}
+
+
+.main-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 426.8px;
+}
+
+.titulo-izquierda {
+    flex: 2;
+    font-size: 14vh;
+    text-align: left;
+    padding-right: 65px;
+    padding-left: 155px;
+    color: #000;
+}
+
+
+
+
+.contenido-derecha {
+    flex: 1;
+    flex-direction: column;
+    text-align: left;
+    direction: rtl;
+    gap: 1vh;
+    padding-right: 70px;
+    line-height: 2;
+    margin-top: 150px;
+
+}
+
+
+
+.imagen-intermediaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -90px;
+
+}
+
+.imagen-medio {
+    margin-top: 30px;
+}
+
+
+/* -----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------- */
+
+.seccion-medio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 90%;
+    gap: 2px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.contenedor-titulo,
+.contenedor-subtitulo,
+.contenedor-descripcion,
+.contenedor-texto,
+.nuestros-productos,
+.subtitulo-productos {
+    width: 100%;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.contenedor-titulo h2 {
+    font: 4vw "Ibarra Real Nova", serif;
+    margin: 0 auto;
+    color: #000;
+}
+
+.contenedor-subtitulo h5,
+.subtitulo-productos h5 {
+    font: 1.5vw "Ibarra Real Nova", serif;
+    margin: 0 auto;
+    color: #000;
+}
+
+.contenedor-texto p {
+    font: 1vw Alata, sans-serif;
+    margin: 0 auto 8.5px;
+    color: #616161;
+    text-align: center;
+    line-height: 2;
+}
+
+.contenedor-descripcion h3 {
+    font: 3vw "Ibarra Real Nova", serif;
+    margin: 0 auto;
+    color: #000;
+}
+
+.nuestros-productos h2 {
+    font: 4vw "Ibarra Real Nova", serif;
+    margin: 0 auto;
+    color: #000;
+}
+
+.boton-leer-mas {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contenedor-boton {
+    text-align: center;
+}
+
+.envoltura-boton {
+    overflow: hidden;
+}
+
+.boton {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #d9534f;
+    color: #fff;
+    text-decoration: none;
+    font: 1.2vw Alata, sans-serif;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: darkred;
+}
+
+
+
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centra los productos en cada fila */
+    gap: 10px;
+    max-width: 1500px;
+    /* Limita el ancho en pantallas grandes */
+    width: 100%;
+    margin-top: -80px;
+    /* Ajusta el margen para mover el contenedor */
+}
+
+.producto-contenedor {
+    width: 400px;
+    /* Cada producto ocupa un tercio del ancho del contenedor */
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido dentro de cada producto */
+}
+
+.producto-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.producto-precio h5 {
+    color: #D83A4E;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto-titulo h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.producto-descripcion p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Contenedor central para centrar todo en la página */
+.contenedor-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 4vh 0;
+    font-family: Arial, sans-serif;
+}
+
+.elemento-testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    text-align: center;
+    color: #333;
+    /* Ajusta según el color de fondo */
+    padding: 2vh;
+    border-radius: 8px;
+}
+
+.elemento-imagen img {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+}
+
+.elemento-nombre .nombre-testimonio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.elemento-icono-cita .icono-cita {
+    font-size: 2rem;
+    color: #b32d00;
+    /* Rojo para la comilla */
+}
+
+.elemento-texto-testimonio p {
+    font: 1.6vw Alata, sans-serif;
+    color: #616161;
+    max-width: 500px;
+    margin: 0px 0px 1vhpx;
+    font-style: italic;
+}
+
+.pie-pagina {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-pie {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.logo-texto .logo {
+    max-width: 100%;
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.descripcion {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.contacto .telefono {
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.contacto .email,
+.contacto .direccion {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+
+.redes-sociales svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+
+.parte-imagen-diferente {
+    background-image: url('img/fondo-imagen.avif');
+    /* Reemplaza con la ruta de tu imagen de mármol */
+    background-size: cover;
+    /* Hace que la imagen cubra toda el área del fondo */
+    background-position: center;
+    background-attachment: fixed;
+    /* Mantiene el fondo fijo */
+    height: 100vh;
+    /* Ajusta el tamaño de la sección según sea necesario */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: -70px;
+
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .menu-1 {
+        flex-direction: column;
+        gap: 1vh;
+    }
+
+    .custom-logo {
+        max-width: 90%;
+        /* Reduce el tamaño de la imagen en pantallas más pequeñas */
+    }
+
+    .titulo-izquierda {
+        font-size: 8vh;
+        margin-top: 50px;
+    }
+
+    .contenido-derecha {
+        margin-top: -10px;
+    }
+
+    .contenedor-texto p {
+        line-height: 1;
+    }
+
+
+    .imagen-intermediaria {
+        width: 100%;
+        /* Contenedor ocupa el 100% del ancho disponible */
+        max-width: 100%;
+        /* Asegura que el contenedor no se desborde */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 0px;
+        /* Oculta el desbordamiento en caso de que la imagen sea muy grande */
+    }
+
+    .imagen-intermediaria img {
+        width: 100%;
+        /* Imagen ocupa el ancho del contenedor */
+        height: 100%;
+        /* Mantiene la proporción de la imagen */
+
+    }
+
+    .imagen-medio {
+        width: 100%;
+        /* Contenedor ocupa el 100% del ancho disponible */
+        max-width: 100%;
+        /* Asegura que el contenedor no se desborde */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    .imagen-medio img {
+        width: 100%;
+        /* Imagen ocupa el ancho del contenedor */
+        height: 100%;
+        /* Mantiene la proporción de la imagen */
+    }
+
+    .contenedor-titulo h2 {
+        font-size: 8vw;
+    }
+
+    .contenedor-subtitulo h5,
+    .subtitulo-productos h5,
+    .contenedor-descripcion h3,
+    .nuestros-productos h2 {
+        font-size: 5vw;
+    }
+
+    .contenedor-texto p {
+        font-size: 4vw;
+    }
+
+    .boton {
+        font-size: 4vw;
+        padding: 10px 20px;
+    }
+
+
+    .parte-imagen-diferente {
+        
+        margin-top: -10px;
+    
+    }
+
+    .pie-pagina {
+        padding: 20px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 480px) {
+    .menu-1 {
+        gap: 0.5vh;
+        font-size: 0.9rem;
+    }
+
+    .custom-logo {
+        max-width: 90%;
+        /* Reduce aún más el tamaño de la imagen en pantallas muy pequeñas */
+    }
+
+    .titulo-izquierda {
+        font-size: 5vh;
+        padding-right: 50px;
+        padding-left: 40px;
+
+    }
+
+    .contenedor-texto p {
+        line-height: 1;
+    }
+
+    .main-article {
+        flex-direction: column;
+    }
+
+    .contenido-derecha {
+        flex-direction: column;
+        text-align: left;
+        gap: 1vh;
+        padding-left: 70px;
+
+    }
+
+    .descripcion-der {
+        margin-top: 30px;
+    }
+
+
+    .imagen-intermediaria {
+        width: 100%;
+        /* Contenedor ocupa el 100% del ancho disponible */
+        max-width: 100%;
+        /* Asegura que el contenedor no se desborde */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 0px;
+        /* Oculta el desbordamiento en caso de que la imagen sea muy grande */
+    }
+
+    .imagen-intermediaria img {
+        width: 100%;
+        /* Imagen ocupa el ancho del contenedor */
+        height: 100%;
+        /* Mantiene la proporción de la imagen */
+    }
+
+
+    .imagen-medio {
+        width: 100%;
+        /* Contenedor ocupa el 100% del ancho disponible */
+        max-width: 75%;
+        /* Asegura que el contenedor no se desborde */
+        overflow: hidden;
+        margin-top: 50px;
+    }
+
+    .imagen-medio img {
+        width: 100%;
+        /* Imagen ocupa el ancho del contenedor */
+        height: 100%;
+        /* Mantiene la proporción de la imagen */
+    }
+
+    .contenedor-titulo h2 {
+        font-size: 10vw;
+    }
+
+    .contenedor-subtitulo h5,
+    .subtitulo-productos h5,
+    .contenedor-descripcion h3,
+    .nuestros-productos h2 {
+        font-size: 6vw;
+    }
+
+    .contenedor-texto p {
+        font-size: 5vw;
+    }
+
+    .boton {
+        font-size: 5vw;
+        padding: 8px 15px;
+    }
+
+    .pie-pagina {
+        padding: 15px 10px;
+    }
+
+    .slogan {
+        font-size: 0.9em;
+    }
+
+    .descripcion,
+    .contacto .telefono,
+    .contacto .email,
+    .contacto .direccion {
+        font-size: 0.75em;
+    }
+
+    .redes-sociales a {
+        width: 20px;
+        height: 20px;
+    }
+
+    .elemento-texto-testimonio p {
+        font-size: 20px;
+    }
+
+
+    .parte-imagen-diferente {
+        
+        margin-top: -10px;
+    
+    }
+
+    .pie-pagina {
+        padding: 20px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+
+
+
+}

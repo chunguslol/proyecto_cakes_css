@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #eaeffa;
+    margin: 0;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-1 {
+
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 18px;
+
+}
+
+.menu-link {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu-link:hover {
+    font-weight: bold;
+}
+
+.site-logo-img {
+    margin-top: 20px;
+
+}
+
+
+
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Centra los productos en cada fila */
+    gap: 10px;
+    max-width: 1500px;
+    /* Limita el ancho en pantallas grandes */
+    width: 100%;
+    margin-top: 100px;
+    /* Ajusta el margen para mover el contenedor */
+}
+
+.producto-contenedor {
+    width: 400px;
+    /* Cada producto ocupa un tercio del ancho del contenedor */
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centra el contenido dentro de cada producto */
+}
+
+.producto-imagen img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.producto-precio h5 {
+    color: #D83A4E;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto-titulo h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 5px 0;
+}
+
+.producto-descripcion p {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Contenedor central para centrar todo en la página */
+.contenedor-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 4vh 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+.elemento-testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+    text-align: center;
+    color: #333;
+    /* Ajusta según el color de fondo */
+    padding: 2vh;
+    border-radius: 8px;
+}
+
+.elemento-imagen img {
+    border-radius: 50%;
+    width: 10vw;
+    height: 10vw;
+}
+
+.elemento-nombre .nombre-testimonio {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+.elemento-icono-cita .icono-cita {
+    font-size: 2rem;
+    color: #b32d00;
+    /* Rojo para la comilla */
+}
+
+.elemento-texto-testimonio p {
+    font: 1.6vw Alata, sans-serif;
+    color: #616161;
+    max-width: 500px;
+    margin: 0px 0px 1vhpx;
+    font-style: italic;
+}
+
+.pie-pagina {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 90px;
+}
+
+.contenedor-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.seccion-pie {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.logo-texto .logo {
+    max-width: 100%;
+}
+
+.slogan {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.descripcion {
+    margin-top: 10px;
+    line-height: 1.6;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.contacto .telefono {
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+
+.contacto .email,
+.contacto .direccion {
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #000;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.redes-sociales a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #000;
+}
+
+.redes-sociales svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+
+@media (max-width: 768px) {
+
+    .contenedor-principal,
+    .about-us,
+    .contenedor-medio,
+    .contenedor-pie {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 20px;
+    }
+
+    .menu-1 {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .header {
+        align-items: center;
+    }
+
+    .contenedor-principal {
+        justify-content: center;
+    }
+
+    .componente {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .texto1 {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .about-us {
+        margin: 40px 0;
+    }
+
+    .contenido-about-us {
+        font-size: 120px;
+    }
+
+    .subtitulo h6 {
+        font-size: 1.5rem;
+    }
+
+    .titulo h2 {
+        font-size: 2.5rem;
+    }
+
+    .descripcion p {
+        font-size: 0.9rem;
+    }
+
+    .pie-pagina {
+        padding: 20px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+
+    .elemento-testimonio {
+        padding: 2vh 10px;
+    }
+
+    .elemento-imagen img {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .elemento-texto-testimonio p {
+        font-size: 3vw;
+        max-width: 100%;
+    }
+
+    .we-bake {
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .contenedor-principal,
+    .about-us,
+    .contenedor-medio,
+    .contenedor-pie {
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 15px;
+    }
+
+    .cakeswl,
+    .we-bake {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        /* Alinea el contenido a la derecha */
+        text-align: left;
+        /* Alinea el texto a la derecha */
+       
+    }
+
+    
+
+    .custom-logo {
+        max-width: 80%;
+    }
+
+    .menu-1 {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    .texto1 {
+        font-size: 14px;
+    }
+
+    .contenido-about-us {
+        font-size: 90px;
+    }
+
+    .subtitulo h6 {
+        font-size: 1.2rem;
+    }
+
+    .titulo h2 {
+        font-size: 2rem;
+    }
+
+    .descripcion p {
+        font-size: 0.8rem;
+    }
+
+    .elemento-testimonio {
+        gap: 0.5vh;
+    }
+
+    .elemento-imagen img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .elemento-texto-testimonio p {
+        font-size: 4vw;
+    }
+
+    .we-bake {
+        font-size: 30px;
+    }
+
+   .pie-pagina {
+        padding: 20px;
+    }
+
+    .contenedor-pie {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-pie {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}
