@@ -228,9 +228,10 @@ body {
 }
 
 .producto-titulo h3 {
-    font-size: 20px;
+    font-size: 30px;
     color: #333;
     margin: 5px 0;
+    text-decoration: none;  
 }
 
 .producto-descripcion p {

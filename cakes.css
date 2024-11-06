@@ -58,7 +58,7 @@ body {
 }
 
 .producto-contenedor {
-    width: 400px;
+    width: 23%;
     /* Cada producto ocupa un tercio del ancho del contenedor */
     text-align: center;
     border-radius: 10px;
@@ -400,5 +400,10 @@ body {
 
     .redes-sociales {
         justify-content: center;
+    }
+
+
+    .producto-contenedor {
+        width: 48%; 
     }
 }
